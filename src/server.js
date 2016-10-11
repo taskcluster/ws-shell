@@ -41,7 +41,7 @@ class ShellHandler extends events.EventEmitter {
         this._process.stdout.pause();
       }
     });
-    this._process.stdout.on('end' () => {
+    this._process.stdout.on('end', () => {
       this._write(msgcodes.STREAM_STDOUT, null);
     });
     this._process.stdout.resume();
@@ -55,7 +55,7 @@ class ShellHandler extends events.EventEmitter {
         this._process.stderr.pause();
       }
     });
-    this._process.stderr.on('end' () => {
+    this._process.stderr.on('end', () => {
       this._write(msgcodes.STREAM_STDERR, null);
     });
     this._process.stderr.resume();
