@@ -104,7 +104,7 @@ class ShellClient extends events.EventEmitter {
       objectMode:     false,
       write:          this._write.bind(this),
       writev: (chunks, callback) => {
-        let data = Buffer.concat([chunks.map(c => c.chunk)]);
+        let data = Buffer.concat(chunks.map(c => c.chunk));
         this._write(data, null, callback);
       },
     });
