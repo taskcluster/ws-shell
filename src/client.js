@@ -215,7 +215,7 @@ class ShellClient extends events.EventEmitter {
     }
   }
 
-  _write(chunk, encoding, callback) {
+  _write(data, encoding, callback) {
     while (data.length > MAX_MESSAGE_SIZE) {
       this._writeChunk(data.slice(0, MAX_MESSAGE_SIZE), null, () => {});
       data = data.slice(MAX_MESSAGE_SIZE);
