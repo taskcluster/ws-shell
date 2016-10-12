@@ -1,7 +1,7 @@
 let wsshell = require('./');
 
 (async () => {
-  let shell = await wsshell.Open({
+  let shell = await wsshell.dial({
     url:      'ws://127.0.0.1:2222/',
     tty:      process.stdout.isTTY,
     command:  ["bash"],
