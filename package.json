@@ -8,7 +8,7 @@
     "compile": "babel-compile -p taskcluster src:lib test:.test",
     "prepublish": "npm run compile",
     "pretest": "npm run compile",
-    "test": "mocha .test/lint.js .test/*_test.js"
+    "test": "mocha .test/lint.js"
   },
   "repository": {
     "type": "git",
@@ -18,10 +18,10 @@
     "babel-runtime": "^6.0.0",
     "debug": "^2.2.0",
     "lodash": "^4.5.1",
-    "ws": "^1.1.1",
-    "through2":	"^2.0.1",
+    "promise": "^7.0.4",
     "readable-stream": "^2.1.5",
-    "promise": "^7.0.4"
+    "through2": "^2.0.1",
+    "ws": "2.2.0"
   },
   "devDependencies": {
     "babel-compile": "^2.0.0",
