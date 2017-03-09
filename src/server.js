@@ -9,7 +9,6 @@ let through2    = require('through2');
 const MAX_OUTSTANDING = 64 * 1024;
 const MAX_MESSAGE_SIZE = 16 * 1024;
 
-
 class ShellHandler extends events.EventEmitter {
   constructor(websocket, process) {
     super();
@@ -172,6 +171,4 @@ class ShellHandler extends events.EventEmitter {
     ]);
     this._ws.send(Buffer.concat([header, chunk]));
   }
-
-
 }
