@@ -5,33 +5,30 @@
   "description": "Expose a shell over a websocket",
   "license": "MPL-2.0",
   "scripts": {
-    "compile": "babel-compile -p taskcluster src:lib test:.test",
-    "prepublish": "npm run compile",
-    "pretest": "npm run compile",
-    "test": "mocha .test/lint.js"
+    "compile": "babel-compile -p taskcluster src:lib",
+    "lint": "eslint src/*.js",
+    "prepare": "yarn compile",
+    "pretest": "yarn compile",
+    "test": "yarn lint"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/taskcluster/ws-shell.git"
   },
   "dependencies": {
-    "babel-runtime": "^6.0.0",
-    "debug": "^2.2.0",
+    "babel-runtime": "^6.26.0",
+    "debug": "^3.1.0",
     "lodash": "^4.5.1",
-    "promise": "^7.0.4",
-    "readable-stream": "^2.1.5",
+    "promise": "^8.0.1",
+    "readable-stream": "^2.3.3",
     "through2": "^2.0.1",
-    "ws": "2.2.0"
+    "ws": "3.3.1"
   },
   "devDependencies": {
     "babel-compile": "^2.0.0",
-    "babel-eslint": "^6.0.0",
     "babel-preset-taskcluster": "^3.0.0",
-    "eslint-config-taskcluster": "^2.0.0",
-    "eslint-plugin-taskcluster": "^1.0.0",
-    "mocha": "2.5.3",
-    "mocha-eslint": "^2.0.1",
-    "source-map-support": "^0.4.0"
+    "eslint-config-taskcluster": "^3.0.0",
+    "source-map-support": "^0.5.0"
   },
   "main": "./lib/index.js"
 }
