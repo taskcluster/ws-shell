@@ -5,10 +5,11 @@
   "description": "Expose a shell over a websocket",
   "license": "MPL-2.0",
   "scripts": {
-    "compile": "babel-compile -p taskcluster src:lib test:.test",
-    "prepublish": "npm run compile",
-    "pretest": "npm run compile",
-    "test": "mocha .test/lint.js"
+    "compile": "babel-compile -p taskcluster src:lib",
+    "lint": "eslint src/*.js",
+    "prepare": "yarn compile",
+    "pretest": "yarn compile",
+    "test": "yarn lint"
   },
   "repository": {
     "type": "git",
@@ -25,12 +26,9 @@
   },
   "devDependencies": {
     "babel-compile": "^2.0.0",
-    "babel-eslint": "^6.0.0",
     "babel-preset-taskcluster": "^3.0.0",
-    "eslint-config-taskcluster": "^2.0.0",
-    "eslint-plugin-taskcluster": "^1.0.0",
+    "eslint-config-taskcluster": "^3.0.0",
     "mocha": "2.5.3",
-    "mocha-eslint": "^2.0.1",
     "source-map-support": "^0.4.0"
   },
   "main": "./lib/index.js"
