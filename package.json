@@ -25,10 +25,10 @@
     "ws": "3.3.1"
   },
   "devDependencies": {
-    "babel-compile": "^2.0.0",
-    "babel-preset-taskcluster": "^3.0.0",
-    "eslint-config-taskcluster": "^3.0.0",
-    "source-map-support": "^0.5.0"
+    "babel-compile": "2.0.0",
+    "babel-preset-taskcluster": "3.0.0",
+    "eslint-config-taskcluster": "3.0.0",
+    "source-map-support": "0.5.0"
   },
   "main": "./lib/index.js"
 }
