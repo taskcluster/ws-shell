@@ -93,9 +93,10 @@ babel-code-frame@^6.22.0:
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-babel-compile@^2.0.0:
+babel-compile@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/babel-compile/-/babel-compile-2.0.0.tgz#270460d85cda8758aa5c63165b365a6bc44c9976"
+  integrity sha1-JwRg2Fzah1iqXGMWWzZaa8RMmXY=
   dependencies:
     babel-core "^6.7.0"
     commander "^2.8.1"
@@ -466,9 +467,10 @@ babel-preset-es2015@^6.9.0:
     babel-plugin-transform-es2015-unicode-regex "^6.22.0"
     babel-plugin-transform-regenerator "^6.22.0"
 
-babel-preset-taskcluster@^3.0.0:
+babel-preset-taskcluster@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/babel-preset-taskcluster/-/babel-preset-taskcluster-3.0.0.tgz#4047dd6892731661a48e04551cc05acd3a774c57"
+  integrity sha1-QEfdaJJzFmGkjgRVHMBazTp3TFc=
   dependencies:
     babel-plugin-syntax-async-functions "^6.8.0"
     babel-plugin-transform-async-to-generator "^6.8.0"
@@ -709,9 +711,10 @@ escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
 
-eslint-config-taskcluster@^3.0.0:
+eslint-config-taskcluster@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/eslint-config-taskcluster/-/eslint-config-taskcluster-3.0.0.tgz#ce50466c13eef198c605328887ef13b8a37d8c92"
+  integrity sha512-t0Yw2emJI7F6yJwMThzyHLu4mH3WYXDChzIMzKo5TXSziDtLF+ejXHdw0YX7hOBjB82qBe+VXax7xfHStAF0Ug==
   dependencies:
     eslint "^4.10.0"
 
@@ -1355,17 +1358,18 @@ slice-ansi@1.0.0:
   dependencies:
     is-fullwidth-code-point "^2.0.0"
 
+source-map-support@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.0.tgz#2018a7ad2bdf8faf2691e5fddab26bed5a2bacab"
+  integrity sha512-vUoN3I7fHQe0R/SJLKRdKYuEdRGogsviXFkHHo17AWaTGv17VLnxw+CFXvqy+y4ORZ3doWLQcxRYfwKrsd/H7Q==
+  dependencies:
+    source-map "^0.6.0"
+
 source-map-support@^0.4.2:
   version "0.4.11"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.11.tgz#647f939978b38535909530885303daf23279f322"
   dependencies:
     source-map "^0.5.3"
-
-source-map-support@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.0.tgz#2018a7ad2bdf8faf2691e5fddab26bed5a2bacab"
-  dependencies:
-    source-map "^0.6.0"
 
 source-map@^0.5.0, source-map@^0.5.3:
   version "0.5.6"
