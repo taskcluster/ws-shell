@@ -27,7 +27,8 @@
   "devDependencies": {
     "babel-compile": "2.0.0",
     "babel-preset-taskcluster": "3.0.0",
-    "eslint-config-taskcluster": "3.3.0",
+    "eslint": "^5.10.0",
+    "eslint-config-taskcluster": "4.0.0",
     "source-map-support": "0.5.12"
   },
   "main": "./lib/index.js"
