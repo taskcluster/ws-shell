@@ -29,7 +29,7 @@
     "babel-preset-taskcluster": "3.0.0",
     "eslint": "6.6.0",
     "eslint-config-taskcluster": "4.0.0",
-    "source-map-support": "0.5.13"
+    "source-map-support": "0.5.16"
   },
   "main": "./lib/index.js"
 }
