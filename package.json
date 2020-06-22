@@ -1,6 +1,6 @@
 {
   "name": "ws-shell",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "author": "Jonas Finnemann Jensen <jopsen@gmail.com>",
   "description": "Expose a shell over a websocket",
   "license": "MPL-2.0",
